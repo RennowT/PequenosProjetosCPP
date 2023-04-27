@@ -1,7 +1,9 @@
 #pragma once
 
+/* ================================= Bibliotecas =============================== */
 #include <iostream>
 
+/* ============================ Declaração de Funções ========================== */
 int entradaInteiro();
 bool jogoTerminou(int tentativas, bool acertou);
 void limpaTerminal();
@@ -15,11 +17,14 @@ bool acertouNumero(int seletor, int numeroAleatorio);
 bool numeroMaior(int seletor, int numeroAleatorio);
 bool numeroMenor(int seletor, int numeroAleatorio);
 void mensagemNumeroMaior();
-void mentagemNumeroMenor();
+void mensagemNumeroMenor();
 void mensagemVencedor();
 void mensagemPerdedor();
 void mensagemJogarNovamente();
 
+/* =================================== Funções ================================== */
+
+// Função que pergunta se o jogador quer jogar novamente
 void mensagemJogarNovamente()
 {
     std::cout << "       Jogar Novamente:  Sim [1]  Não [2]\n\n";
@@ -27,6 +32,7 @@ void mensagemJogarNovamente()
     return;
 }
 
+// Função que envia a mensagem para o perdedor
 void mensagemPerdedor()
 {
     std::cout << "\n\n       Você perdeu! Tente na proxima!\n\n";
@@ -34,6 +40,7 @@ void mensagemPerdedor()
     return;
 }
 
+// Função que envia a mensagem para o ganhador
 void mensagemVencedor()
 {
     std::cout << "\n\n       Parabens você ganhou!\n\n";
@@ -51,13 +58,15 @@ void mensagemVencedor()
     return;
 }
 
-void mentagemNumeroMenor()
+// Função que manda a mensagem se o valor chutado for menor do que o numero secreto
+void mensagemNumeroMenor()
 {
     std::cout << "       O número chutado é MENOR do que o sorteado\n\n";
 
     return;
 }
 
+// Função que manda a mensagem se o valor chutado for maior do que o numero secreto
 void mensagemNumeroMaior()
 {
     std::cout << "       O número chutado é MAIOR do que o sorteado\n\n";
@@ -65,6 +74,7 @@ void mensagemNumeroMaior()
     return;
 }
 
+// Verifica se o número chutado é menor do que o número secreto
 bool numeroMenor(int seletor, int numeroAleatorio)
 {
     if(seletor < numeroAleatorio)
@@ -73,6 +83,7 @@ bool numeroMenor(int seletor, int numeroAleatorio)
         return false;
 }
 
+// Verifica se o número chutado é maior do que o número secreto
 bool numeroMaior(int seletor, int numeroAleatorio)
 {
     if(seletor > numeroAleatorio)
@@ -81,6 +92,7 @@ bool numeroMaior(int seletor, int numeroAleatorio)
         return false;
 }
 
+// Verifica se acertou o número secreta
 bool acertouNumero(int seletor, int numeroAleatorio)
 {
     if(seletor == numeroAleatorio)
@@ -89,6 +101,7 @@ bool acertouNumero(int seletor, int numeroAleatorio)
         return false;
 }
 
+// Faz a entrada de um valor inteiro
 int entradaInteiro()
 {
     int seletor;
@@ -100,6 +113,7 @@ int entradaInteiro()
     return seletor;
 }
 
+// Verifica se o jogo terminou
 bool jogoTerminou(int tentativas, bool acertou)
 {
     if(tentativas == 0 || acertou == true)
@@ -108,6 +122,7 @@ bool jogoTerminou(int tentativas, bool acertou)
         return false;
 }
 
+// Limpa o terminal
 void limpaTerminal()
 {
     system("clear || cls");
@@ -115,6 +130,7 @@ void limpaTerminal()
     return;
 }
 
+// Mostra o Cabeçalho do jogo
 void mostraCabecalho()
 {
     std::cout << "\n\n       **************************************************\n";
@@ -124,6 +140,7 @@ void mostraCabecalho()
     return;
 }
 
+// Mostra o hub de dificuldade de jogo
 void mostraHub()
 {
     std::cout << "       Selecione a Dificuldade: Facil [1]  Normal [2]  Difícil [3]\n\n";
@@ -131,6 +148,7 @@ void mostraHub()
     return;
 }
 
+// Atribui a quantidade de tentativas de acordo com a dificuldade
 void escolheDificuldade(int seletor, int* tentativas, int* tentativasDificuldade)
 {   
     int facil = 15;
@@ -158,6 +176,7 @@ void escolheDificuldade(int seletor, int* tentativas, int* tentativasDificuldade
     return;
 }
 
+// Mostra o range de numeros para serem chutados
 void mostraRangeDeNumeros()
 {
     std::cout << "\n\n       Digite um número de 1 a 100:\n\n";
@@ -165,6 +184,7 @@ void mostraRangeDeNumeros()
     return;
 }
 
+// Gera o numero aleatório
 int geraNumeroAleatorio()
 {
     int numeroAleatorio;
@@ -175,6 +195,7 @@ int geraNumeroAleatorio()
     return numeroAleatorio;
 }
 
+// Mostra o número de tentativas e quantas faltam
 void mostraNumeroDeTentativas(int tentativas, int tentativasDificuldade)
 {
     std::cout << "       Numero de tentativas: [" << tentativas << " / " << tentativasDificuldade << "]\n\n";

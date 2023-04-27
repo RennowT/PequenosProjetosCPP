@@ -12,9 +12,11 @@
 using namespace std;
 
 /* ================================= Função Main =============================== */
+
 int main()
 {
     /* ============================== Variáveis ============================= */
+
     int seletor; // Variável para entrada de dados
     int tentativas; // Marca as tentativas restantes para o jogador
     int numeroAleatorio; // Armazena o numero aleatório sorteado
@@ -22,6 +24,7 @@ int main()
     int tentativasDificuldade; // Armazena a quantidade de tentativas cada dificuldade disponibiliza
 
     /* ======================== Loop Principal do jogo ====================== */
+
     do
     {   
         limpaTerminal(); // Limpa Tela
@@ -43,6 +46,7 @@ int main()
         mostraRangeDeNumeros(); // Mostra a mensagem dos numeros possiveis
 
         /* ========== loop para verificar se o jogo terminou ========= */
+
         do
         {
             // Mostra número de tentativas e quantas faltam
@@ -62,7 +66,7 @@ int main()
                     mensagemNumeroMaior();
                 // Verifica se 0 valor chutado é menor do que o numero secreto
                 if(numeroMenor(seletor, numeroAleatorio))
-                    mentagemNumeroMenor();
+                    mensagemNumeroMenor();
                 
                 tentativas--; // Subtrai o número de tentativas em caso de erro
             }
@@ -72,6 +76,7 @@ int main()
         limpaTerminal(); // Limpa Terminal
 
         /* ============= Verifica se ganhou ou não ============ */
+
         // Mostra a mensagem para o vencedor ou perdedor
         if(acertou == true)
             mensagemVencedor();
@@ -79,6 +84,7 @@ int main()
             mensagemPerdedor();
 
         /* ========== Pergunta se vai jogar novamente ========= */
+
         mensagemJogarNovamente(); // Pergunta se o jogador quer jogar novamente
         do // Entrada de dados de 1 a 2
         {
@@ -86,6 +92,7 @@ int main()
         }while(seletor < 1 || seletor > 2);
 
         /* ========= Limpa a tela quando fexhar o jogo ======== */
+
         if(seletor == 2)
             limpaTerminal();
 
