@@ -16,3 +16,13 @@ g++ JogoDeAdvinhacao/src/*.cpp -o advinha.exe
 ./advinha.exe
 ```
 
+## Calculadora
+<br>O projeto em questão tem como objetivo o desenvolvimento de um programa que permita ao usuário realizar operações matemáticas simples, utilizando como entrada dois números e uma operação matemática escolhida. O programa deve ser capaz de executar as quatro operações básicas (adição, subtração, multiplicação e divisão) e exibir o resultado da operação escolhida pelo usuário. 
+
+<br>Linux
+```
+```
+
+<br>Windows
+```
+```
