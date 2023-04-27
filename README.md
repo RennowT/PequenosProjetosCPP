@@ -6,13 +6,13 @@ Um repositórios com peques projetos para estudo de C++
 
 <br>Linux
 ```Linux
-g++ JogoDeAdvinhacao/*.cpp -o advinha.out
+g++ JogoDeAdvinhacao/src/*.cpp -o advinha.out
 ./advinha.out
 ```
 
 <br>Windows
 ```
-g++ JogoDeAdvinhacao/*.cpp -o advinha.exe
+g++ JogoDeAdvinhacao/src/*.cpp -o advinha.exe
 ./advinha.exe
 ```
 

@@ -47,7 +47,6 @@ int main()
         limpaTerminal();
 
         numeroAleatorio = geraNumeroAleatorio();
-        cout << numeroAleatorio;
 
         mostraRangeDeNumeros();
 
