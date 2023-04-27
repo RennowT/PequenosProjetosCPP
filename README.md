@@ -21,8 +21,12 @@ O projeto em questão tem como objetivo o desenvolvimento de um programa que per
 
 <br>Linux
 ```
+g++ Calculadora/src/*.cpp -o calculadora.out
+./calculadora.out
 ```
 
 <br>Windows
 ```
+g++ Calculadora/src/*.cpp -o calculadora.exe
+./calculadora.exe
 ```
