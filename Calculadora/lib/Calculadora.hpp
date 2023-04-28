@@ -1,5 +1,9 @@
 #pragma once
 
+/* ================================= Bibliotecas =============================== */
+// Bibliotecas
+#include <cmath>
+
 /* =================================== Classe ================================= */
 
 class Calculadora
@@ -7,12 +11,12 @@ class Calculadora
 private:
     /* data */
 public:
-    Calculadora(double x, char operador, double y);
+    Calculadora();
     ~Calculadora();
     double Calculando(double x, char operador, double y);
 };
 
-Calculadora::Calculadora(double x, char operador, double)
+Calculadora::Calculadora()
 {
 }
 
@@ -37,10 +41,11 @@ double Calculadora::Calculando(double x, char operador, double y)
         break;
 
     case '/':
-        if(y == 0)
-            return 0.0;
         return x / y;
         break;
+
+    case '^':
+        return pow(x, y);
     
     default:
         return 0.0;
