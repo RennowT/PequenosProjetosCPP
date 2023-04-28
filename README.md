@@ -30,3 +30,5 @@ g++ Calculadora/src/*.cpp -o calculadora.out
 g++ Calculadora/src/*.cpp -o calculadora.exe
 ./calculadora.exe
 ```
+
+## Sistema de Gerenciamento de Biblioteca
