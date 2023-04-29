@@ -1,6 +1,29 @@
 # Small Projects C++
 A repository with small projects for studying C++
 
+## File structure
+```
+SmallProjectsCPP
+|__ .vscode
+|   |   settings.json
+|
+|__ Calculadora
+|   |__ lib
+|   |   |   Calculadora.hpp
+|   |
+|   |__ src
+|       |   main.cpp
+|   
+|__ JogoDeAdvinhacao
+|   |__ lib
+|   |   |   header.hpp
+|   |
+|   |__ src
+|       |   main.cpp
+|
+|   README.md
+```
+
 ## Guessing game
 The game consists of a numerical guessing challenge that can be played at three levels of difficulty: easy, normal, and hard. The player's objective is to guess a randomly selected number by the machine through attempts in which they guess a number and receive feedback informing whether the selected number is higher or lower. The player has a limited number of attempts to guess the number and win the game. The challenge requires skill in guessing strategy and information analysis to maximize the chances of guessing the randomly selected number correctly.<br>
 
