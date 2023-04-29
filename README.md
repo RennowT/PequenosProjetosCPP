@@ -1,10 +1,10 @@
-# PequenosProjetosCPP
-Um repositórios com peques projetos para estudo de C++
+# Small Projects C++
+A repository with small projects for studying C++
 
-## Jogo de Advinhação
-O jogo consiste em um desafio de adivinhação numérica, que pode ser jogado em três níveis de dificuldade: fácil, normal e difícil. O objetivo do jogador é acertar um número aleatório escolhido pela máquina, através de tentativas em que chuta um número e recebe uma resposta informando se o número sorteado é maior ou menor. O jogador tem um número limitado de tentativas para acertar o número e vencer o jogo. O desafio requer habilidade em estratégia de chute e análise de informações para maximizar as chances de acertar o número sorteado. <br>
+## Guessing game
+The game consists of a numerical guessing challenge that can be played at three levels of difficulty: easy, normal, and hard. The player's objective is to guess a randomly selected number by the machine through attempts in which they guess a number and receive feedback informing whether the selected number is higher or lower. The player has a limited number of attempts to guess the number and win the game. The challenge requires skill in guessing strategy and information analysis to maximize the chances of guessing the randomly selected number correctly.<br>
 
-#### Formas de compilação
+#### Ways of compilation
 Linux
 ```Linux
 g++ JogoDeAdvinhacao/src/*.cpp -o advinha.out
@@ -17,10 +17,10 @@ g++ JogoDeAdvinhacao/src/*.cpp -o advinha.exe
 ./advinha.exe
 ```
 
-## Calculadora
-O projeto em questão tem como objetivo o desenvolvimento de um programa que permita ao usuário realizar operações matemáticas simples, utilizando como entrada dois números e uma operação matemática escolhida. O programa deve ser capaz de executar as quatro operações básicas (adição, subtração, multiplicação e divisão) e exibir o resultado da operação escolhida pelo usuário. <br>
+## Calculator
+The project aims to develop a program that allows the user to perform simple mathematical operations using two numbers and a chosen mathematical operation as inputs. The program should be able to perform the four basic arithmetic operations (addition, subtraction, multiplication, and division) and display the result of the operation chosen by the user. <br>
 
-#### Formas de compilação
+#### Ways of compilation
 Linux
 ```
 g++ Calculadora/src/*.cpp -o calculadora.out
