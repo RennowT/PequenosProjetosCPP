@@ -20,6 +20,11 @@ g++ JogoDeAdvinhacao/src/*.cpp -o advinha.exe
 ## Calculator
 The project aims to develop a program that allows the user to perform simple mathematical operations using two numbers and a chosen mathematical operation as inputs. The program should be able to perform the four basic arithmetic operations (addition, subtraction, multiplication, and division) and display the result of the operation chosen by the user. <br>
 
+#### Arithmetic operations and their forms
+```
+x + y  |  x - y  |  x * y  |  x / y  |  x^y
+```
+
 #### Ways of compilation
 Linux
 ```
